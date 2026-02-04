@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Satisfaction Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+    }
+    .signature {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Customer Satisfaction Survey</h1>
+  <p><strong>A Personal Message from the CEO</strong></p>
+  <p>Dear Valued Customer,</p>
+  <p>At our organization, we believe luxury is reflected not only in our projects but also in the experience we deliver. Your feedback is priceless and helps us continuously enhance our quality, service standards and customer relationships. I personally request you to spare a few minutes to share your valuable feedback.</p>
+  <p><strong>Warm Regards</strong>,<br><strong>Tikshnagat Waghmare</strong><br><strong> Chief Executive Officer</strong></p>
+
+  <h2>Customer Details</h2>
+  <form action="https://formspree.io/f/xnjzjrpz" method= "POST">
+     <label for="projectName">Project Name:</label>
+    <input type="text" id="projectName" name="projectName" required><br><br>
+
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" name="customerName" required><br><br>
+
+    <label for="flatTower">Flat & Tower Number:</label>
+    <input type="text" id="flatTower" name="flatTower"><br><br>
+
+    <label for="contactNo">Contact No.:</label>
+    <input type="tel" id="contactNo" name="contactNo" pattern="[0-9]{10}" required><br><br>
+
+    <label for="visitDate">Date of Visit:</label>
+    <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+
+   <h2>Sales & Booking Experience</h2>
+  <table>
+    <tr>
+         </tr>
+    <tr>
+      <td>Courtesy and behaviour of staff</td>
+      <td><label for="courtesy_excellent"><input type="radio" id="courtesy_excellent" name="courtesy_behaviour" value="Excellent"> Excellent</label></td>
+<td><label for="courtesy_good"><input type="radio" id="courtesy_good" name="courtesy_behaviour" value="Good"> Good</label></td>
+<td><label for="courtesy_average"><input type="radio" id="courtesy_average" name="courtesy_behaviour" value="Average"> Average</label></td>
+<td><label for="courtesy_poor"><input type="radio" id="courtesy_poor" name="courtesy_behaviour" value="Poor"> Poor</label></td>
+
+    </tr>
+    <tr>
+      <td>Professionalism of Sales Team</td>
+      <td><label for="professionalism_sales_excellent"><input type="radio" id="professionalism_sales_excellent" name="professionalism_sales" value="Excellent"> Excellent</label></td>
+<td><label for="professionalism_sales_good"><input type="radio" id="professionalism_sales_good" name="professionalism_sales" value="Good"> Good</label></td>
+<td><label for="professionalism_sales_average"><input type="radio" id="professionalism_sales_average" name="professionalism_sales" value="Average"> Average</label></td>
+<td><label for="professionalism_sales_poor"><input type="radio" id="professionalism_sales_poor" name="professionalism_sales" value="Poor"> Poor</label></td>
+
+    </tr>
+   <tr>
+    <td>Transparency & Communication</td>
+    <td><label for="transparency_communication_excellent"><input type="radio" id="transparency_communication_excellent" name="transparency_communication" value="Excellent"> Excellent</label></td>
+    <td><label for="transparency_communication_good"><input type="radio" id="transparency_communication_good" name="transparency_communication" value="Good"> Good</label></td>
+    <td><label for="transparency_communication_average"><input type="radio" id="transparency_communication_average" name="transparency_communication" value="Average"> Average</label></td>
+    <td><label for="transparency_communication_poor"><input type="radio" id="transparency_communication_poor" name="transparency_communication" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Booking Process</td>
+    <td><label for="booking_process_excellent"><input type="radio" id="booking_process_excellent" name="booking_process" value="Excellent"> Excellent</label></td>
+    <td><label for="booking_process_good"><input type="radio" id="booking_process_good" name="booking_process" value="Good"> Good</label></td>
+    <td><label for="booking_process_average"><input type="radio" id="booking_process_average" name="booking_process" value="Average"> Average</label></td>
+    <td><label for="booking_process_poor"><input type="radio" id="booking_process_poor" name="booking_process" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Responsiveness to queries</td>
+    <td><label for="responsiveness_queries_excellent"><input type="radio" id="responsiveness_queries_excellent" name="responsiveness_queries" value="Excellent"> Excellent</label></td>
+    <td><label for="responsiveness_queries_good"><input type="radio" id="responsiveness_queries_good" name="responsiveness_queries" value="Good"> Good</label></td>
+    <td><label for="responsiveness_queries_average"><input type="radio" id="responsiveness_queries_average" name="responsiveness_queries" value="Average"> Average</label></td>
+    <td><label for="responsiveness_queries_poor"><input type="radio" id="responsiveness_queries_poor" name="responsiveness_queries" value="Poor"> Poor</label></td>
+  </tr>
+</table>
+
+
+  <h2>On-Site Experience</h2>
+  <table>
+    <tr>
+      
+    </tr>
+    <tr>
+     <table>
+  <tr>
+  <td>Site Visit Coordination</td>
+  <td><label for="site_visit_coordination_excellent"><input type="radio" id="site_visit_coordination_excellent" name="site_visit_coordination" value="Excellent"> Excellent</label></td>
+  <td><label for="site_visit_coordination_good"><input type="radio" id="site_visit_coordination_good" name="site_visit_coordination" value="Good"> Good</label></td>
+  <td><label for="site_visit_coordination_average"><input type="radio" id="site_visit_coordination_average" name="site_visit_coordination" value="Average"> Average</label></td>
+  <td><label for="site_visit_coordination_poor"><input type="radio" id="site_visit_coordination_poor" name="site_visit_coordination" value="Poor"> Poor</label></td>
+</tr>
+
+  <tr>
+    <td>Staff Courtesy & Hospitality</td>
+    <td><label for="staff_courtesy_excellent"><input type="radio" id="staff_courtesy_excellent" name="staff_courtesy" value="Excellent"> Excellent</label></td>
+    <td><label for="staff_courtesy_good"><input type="radio" id="staff_courtesy_good" name="staff_courtesy" value="Good"> Good</label></td>
+    <td><label for="staff_courtesy_average"><input type="radio" id="staff_courtesy_average" name="staff_courtesy" value="Average"> Average</label></td>
+    <td><label for="staff_courtesy_poor"><input type="radio" id="staff_courtesy_poor" name="staff_courtesy" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Project Explanation at Site</td>
+    <td><label for="project_explanation_excellent"><input type="radio" id="project_explanation_excellent" name="project_explanation" value="Excellent"> Excellent</label></td>
+    <td><label for="project_explanation_good"><input type="radio" id="project_explanation_good" name="project_explanation" value="Good"> Good</label></td>
+    <td><label for="project_explanation_average"><input type="radio" id="project_explanation_average" name="project_explanation" value="Average"> Average</label></td>
+    <td><label for="project_explanation_poor"><input type="radio" id="project_explanation_poor" name="project_explanation" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Cleanliness & Hygiene at office premises</td>
+    <td><label for="office_cleanliness_excellent"><input type="radio" id="office_cleanliness_excellent" name="office_cleanliness" value="Excellent"> Excellent</label></td>
+    <td><label for="office_cleanliness_good"><input type="radio" id="office_cleanliness_good" name="office_cleanliness" value="Good"> Good</label></td>
+    <td><label for="office_cleanliness_average"><input type="radio" id="office_cleanliness_average" name="office_cleanliness" value="Average"> Average</label></td>
+    <td><label for="office_cleanliness_poor"><input type="radio" id="office_cleanliness_poor" name="office_cleanliness" value="Poor"> Poor</label></td>
+  </tr>
+</table>
+
+<h2>Construction & Quality</h2>
+<table>
+  <tr>
+    
+  </tr>
+  <tr>
+    <td>Construction Quality</td>
+    <td><label for="construction_quality_excellent"><input type="radio" id="construction_quality_excellent" name="construction_quality" value="Excellent"> Excellent</label></td>
+    <td><label for="construction_quality_good"><input type="radio" id="construction_quality_good" name="construction_quality" value="Good"> Good</label></td>
+    <td><label for="construction_quality_average"><input type="radio" id="construction_quality_average" name="construction_quality" value="Average"> Average</label></td>
+    <td><label for="construction_quality_poor"><input type="radio" id="construction_quality_poor" name="construction_quality" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Design & Layout</td>
+    <td><label for="design_layout_excellent"><input type="radio" id="design_layout_excellent" name="design_layout" value="Excellent"> Excellent</label></td>
+    <td><label for="design_layout_good"><input type="radio" id="design_layout_good" name="design_layout" value="Good"> Good</label></td>
+    <td><label for="design_layout_average"><input type="radio" id="design_layout_average" name="design_layout" value="Average"> Average</label></td>
+    <td><label for="design_layout_poor"><input type="radio" id="design_layout_poor" name="design_layout" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Quality of Materials Used</td>
+    <td><label for="materials_quality_excellent"><input type="radio" id="materials_quality_excellent" name="materials_quality" value="Excellent"> Excellent</label></td>
+    <td><label for="materials_quality_good"><input type="radio" id="materials_quality_good" name="materials_quality" value="Good"> Good</label></td>
+    <td><label for="materials_quality_average"><input type="radio" id="materials_quality_average" name="materials_quality" value="Average"> Average</label></td>
+    <td><label for="materials_quality_poor"><input type="radio" id="materials_quality_poor" name="materials_quality" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Cleanliness & Hygiene at Site</td>
+    <td><label for="cleanliness_excellent"><input type="radio" id="cleanliness_excellent" name="cleanliness" value="Excellent"> Excellent</label></td>
+    <td><label for="cleanliness_good"><input type="radio" id="cleanliness_good" name="cleanliness" value="Good"> Good</label></td>
+    <td><label for="cleanliness_average"><input type="radio" id="cleanliness_average" name="cleanliness" value="Average"> Average</label></td>
+    <td><label for="cleanliness_poor"><input type="radio" id="cleanliness_poor" name="cleanliness" value="Poor"> Poor</label></td>
+  </tr>
+</table>
+
+<h2>Post-Sales Experience</h2>
+<table>
+  <tr>
+     </tr>
+  <tr>
+    <td>Clarity of Documentation</td>
+    <td><label for="documentation_excellent"><input type="radio" id="documentation_excellent" name="documentation" value="Excellent"> Excellent</label></td>
+    <td><label for="documentation_good"><input type="radio" id="documentation_good" name="documentation" value="Good"> Good</label></td>
+    <td><label for="documentation_average"><input type="radio" id="documentation_average" name="documentation" value="Average"> Average</label></td>
+    <td><label for="documentation_poor"><input type="radio" id="documentation_poor" name="documentation" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Ease of Payment Process</td>
+    <td><label for="payment_process_excellent"><input type="radio" id="payment_process_excellent" name="payment_process" value="Excellent"> Excellent</label></td>
+    <td><label for="payment_process_good"><input type="radio" id="payment_process_good" name="payment_process" value="Good"> Good</label></td>
+    <td><label for="payment_process_average"><input type="radio" id="payment_process_average" name="payment_process" value="Average"> Average</label></td>
+    <td><label for="payment_process_poor"><input type="radio" id="payment_process_poor" name="payment_process" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Registration Process</td>
+    <td><label for="registration_excellent"><input type="radio" id="registration_excellent" name="registration" value="Excellent"> Excellent</label></td>
+    <td><label for="registration_good"><input type="radio" id="registration_good" name="registration" value="Good"> Good</label></td>
+    <td><label for="registration_average"><input type="radio" id="registration_average" name="registration" value="Average">Average</label></td>
+    <td><label for="registration_poor"><input type="radio" id="registration_poor" name="registration" value="Poor"> Poor</label></td>
+
+   
+  <tr>
+    <td>Responsiveness of Support Team</td>
+    <td><label for="support_team_excellent"><input type="radio" id="support_team_excellent" name="support_team" value="Excellent"> Excellent</label></td>
+    <td><label for="support_team_good"><input type="radio" id="support_team_good" name="support_team" value="Good"> Good</label></td>
+    <td><label for="support_team_average"><input type="radio" id="support_team_average" name="support_team" value="Average"> Average</label></td>
+    <td><label for="support_team_poor"><input type="radio" id="support_team_poor" name="support_team" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Resolution of Queries</td>
+    <td><label for="queries_resolution_excellent"><input type="radio" id="queries_resolution_excellent" name="queries_resolution" value="Excellent"> Excellent</label></td>
+    <td><label for="queries_resolution_good"><input type="radio" id="queries_resolution_good" name="queries_resolution" value="Good"> Good</label></td>
+    <td><label for="queries_resolution_average"><input type="radio" id="queries_resolution_average" name="queries_resolution" value="Average"> Average</label></td>
+    <td><label for="queries_resolution_poor"><input type="radio" id="queries_resolution_poor" name="queries_resolution" value="Poor"> Poor</label></td>
+  </tr>
+</table>
+
+<h2>Experience with Accounts Team</h2>
+<table>
+  <tr>
+     </tr>
+  <tr>
+    <td>Support for GST and TDS Queries</td>
+    <td><label for="gst_tds_support_excellent"><input type="radio" id="gst_tds_support_excellent" name="gst_tds_support" value="Excellent"> Excellent</label></td>
+    <td><label for="gst_tds_support_good"><input type="radio" id="gst_tds_support_good" name="gst_tds_support" value="Good"> Good</label></td>
+    <td><label for="gst_tds_support_average"><input type="radio" id="gst_tds_support_average" name="gst_tds_support" value="Average"> Average</label></td>
+    <td><label for="gst_tds_support_poor"><input type="radio" id="gst_tds_support_poor" name="gst_tds_support" value="Poor"> Poor</label></td>
+  </tr>
+  <tr>
+    <td>Timely Issuance of Receipts</td>
+    <td><label for="receipts_excellent"><input type="radio" id="receipts_excellent" name="receipts" value="Excellent"> Excellent</label></td>
+    <td><label for="receipts_good"><input type="radio" id="receipts_good" name="receipts" value="Good"> Good</label></td>
+    <td><label for="receipts_average"><input type="radio" id="receipts_average" name="receipts" value="Average"> Average</label></td>
+    <td><label for="receipts_poor"><input type="radio" id="receipts_poor" name="receipts" value="Poor"> Poor</label></td>
+  </tr>
+</table>
+
+<h2>Overall Experience</h2>
+<table>
+  <tr>
+      </tr>
+  <tr>
+    <td>Overall Satisfaction with Company</td>
+    <td><label for="overall_satisfaction_excellent"><input type="radio" id="overall_satisfaction_excellent" name="overall_satisfaction" value="Excellent"> Excellent</label></td>
+    <td><label for="overall_satisfaction_good"><input type="radio" id="overall_satisfaction_good" name="overall_satisfaction" value="Good"> Good</label></td>
+    <td><label for="overall_satisfaction_average"><input type="radio" id="overall_satisfaction_average" name="overall_satisfaction" value="Average"> Average</label></td>
+    <td><label for="overall_satisfaction_poor"><input type="radio" id="overall_satisfaction_poor" name="overall_satisfaction" value="Poor"> Poor</label></td>
+  </tr>
+</table>
+
+
+
+
+    <!-- Repeat similar tables for On-Site Experience, Construction & Quality, Post-Sales Experience, Accounts Team, Overall Experience -->
+
+    <h2>Recommendation</h2>
+    <label>Rate our services: 
+      <select name="stars" style="font-size:20px; color:gold;">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★</option>
+        <option value="3">★★★</option>
+        <option value="2">★★</option>
+        <option value="1">★</option>
+      </select>
+    </label>
+
+    <h2>Your Valuable Feedback</h2>
+    <label>What did you appreciate most about our sevices?<br>
+      <textarea name="appreciation"></textarea>
+    </label><br><br>
+    <label>What can we improve to serve you better?<br>
+<textarea id="feedback"></textarea>
+    </label><br><br>
+ <!-- Feedback input -->
+  <div class="signature">
+      <label>Customer Signature: <input type="text" name="signature"></label><br><br>
+      <label>Relationship Manager Name: <input type="text" name="rmName"></label>
+    </div>
+    <br><br>
+  
+  <!-- Submit button -->
+  <button id="submitBtn">Submit Feedback</button>
+
+  <script>
+    document.getElementById("submitBtn").addEventListener("click", function() {
+      // Get feedback text
+      const feedback = document.getElementById("feedback").value;
+
+      if (feedback.trim() === "") {
+        alert("Please enter feedback before submitting.");
+        return;
+      }
+
+
+      // Save feedback (example: localStorage)
+      localStorage.setItem("userFeedback", feedback);
+
+      alert("Thank you! Your feedback has been saved.");
+    });
+  </script>
+
+</body>
+</html>
